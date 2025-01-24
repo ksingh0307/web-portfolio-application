@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency-converter.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h2>KS</h2>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+                    <!-- <li><a href="#experience">Experience</a></li>
+                    <li><a href="#experience">Interest/Hobbies</a></li>
+                    <li><a href="#experience">Testimonials</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#skills">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Currency Converter -->
+    <div class="currency-converter-container">
+      <div class="converter-form">
+        <h2 class="currency">Currency Converter</h2>
+        <form onsubmit="convertCurrency(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstCurrency">From Source Currency:</label>
+              <select id="firstCurrency" class="form-control" required></select>
+            </div>
+            <div class="form-group text-center">
+              <img
+                src="../images/currency-converter1.png"
+                alt="Exchange"
+                class="exchange-icon"
+                width="94" height="94"
+              />
+            </div>
+            <div class="form-group">
+              <label for="secondCurrency">To Destination Currency:</label>
+              <select
+                id="secondCurrency"
+                class="form-control"
+                required
+              ></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount (Maximum: 1000):</label>
+            <input
+              type="number"
+              id="amount"
+              value="1"
+              min="1"
+              max="1000"
+              step="0.01"
+              required
+              class="form-control"
+              onclick="checkAmount()"
+            />
+            <label id="error" class="error-message"></label>
+          </div>
+          <!-- <button type="submit" class="convert-button">Convert</button> -->
+        </form>
+        <div>
+          <div class="form-group">
+            <label>Calculation Timestamp:</label>
+            <span id="calculationTimestamp"></span>
+          </div>
+          <div class="form-group">
+            <label>Exchange Rate:</label>
+            <span id="exchangeRate"></span>
+          </div>
+          <div class="form-group">
+            <label>Converted Amount:</label>
+            <span id="result"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright © Kajal Singh</p>
+      <p>kajolsingh124@gmail.com</p>
+    </footer>
+
+    <script src="currency-converter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- Theme color for Android and address bar -->
+    <meta name="theme-color" content="#0077b5">
+    <!-- Set the status bar style for iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- iOS Safari theme color -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Icons for Various Platforms -->
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/webp" sizes="192x192" href="images/favicon/web-app-manifest-192x192.webp">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/web-app-manifest-192x192.png">
+
+    <!-- Prevent Browser UI Overlays -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+  </head>
+  <body onload="createCaptcha()">
+    <div id="custom-splash-screen">
+      <img src="images/favicon/web-app-manifest-512x512.png" alt="Logo" class="splash-logo">
+      <h1 class="splash-text">Welcome to My Portfolio</h1>
+    </div>
+    <header class="header">
+      <div class="header-container">
+        <img src="images/favicon/favicon.svg" height="50" width="50" class="logo" alt=“image” >
+       
+        <!-- Burger Icon -->
+        <div class="burger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Technical Achievements</a></li>
+            <li><a href="#interest">Interest/Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Mobile Navigation -->
+        <nav id="mobileNav" class="mobile-nav">
+          <ul>
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Technical Achievements</a></li>
+            <li><a href="#interest">Interest/Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+      <div class="profile-container">
+        <div class="profile-picture"></div>
+        <div class="profile-info">
+          <h2>Kajal Singh</h2>
+          <p>Frontend Developer</p>
+          <p>Stoke-On-Trent, United Kingdom</p>
+          <button><a href="images/resume/Frontend-developer-resume.pdf" download class="download-btn">Download Resume</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">About</div>
+      <div class="about-content">
+        <div class="content">
+          <p>👋 Hi there! I'm a front-end developer with 4+ years of experience building intuitive and engaging web applications. My expertise lies in HTML5, CSS3, and JavaScript (ES6+), and I have a strong background in creating responsive and mobile-first websites that seamlessly integrate with backend systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="section-header">Education</div>
+      <div class="education-item">
+        <div class="item-logos">
+          <img src="images/uniofstaffs_logo.jpg" width="100" height="100" />
+        </div>
+        <div class="content">
+          <h3>University of Staffordshire</h3>
+          <h5>Masters, Computer Science</h5>
+          <h5>Jan 2024 - May 2025</h5>
+        </div>
+      </div>
+    </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="section-header">Experience</div>
+        <div class="experience-item">
+          <div class="item-logos">
+            <img src="images/aureus_tech_systems_llc_logo.jpg" width="100" height="100" />
+          </div>
+          <div class="content">
+            <h3>Software Engineer</h3>
+            <h5>Aureus Tech System Pvt Ltd.</h5>
+            <h5>Jun 2022- Jan 2024</h5>
+            <ul class="outline-round">
+              <li>Responsive web development with HTML, CSS, and JavaScript</li>
+              <li>Dynamic UI creation using Angular and React</li>
+              <li>Micro Frontend architecture expertise</li>
+              <li>Unit testing with Jasmine and Karma</li>
+              <li>Clean, maintainable, and scalable coding practices</li>
+              <li>Collaboration with designers for UI/UX implementation</li>
+              <li>Agile development and on-time delivery of high-quality products</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="item-logos">
+            <img src="images/watchguard_technologies_logo.jpg" width="100" height="100" />
+          </div>
+          <div class="content">
+            <h3>Software Engineer</h3>
+            <h5>Watchgurad Technologies Pvt Ltd.</h5>
+            <h5>Jun 2021 - Jun 2022</h5>
+            <ul class="outline-round">
+              <li>Designed, developed, and maintained software applications using AWS Services and Python</li>
+              <li>Backend development with Python and AWS integration</li>
+              <li>Wrote unit test cases using Jasmine, Karma, and pytest</li>
+              <li>Worked on frontend and backend testing</li>
+              <li>Attended training sessions on Cyber Security, AWS, and the latest Angular versions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="section-header">Testimonials</div>
+        <div class="testimonials-container">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+                <img src="images/testimonials/profile-1.png" alt="Profile Picture" width="94" height="94">
+                <h3>John Waddrob</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellat aspernatur temporibus assumenda.
+                </p>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+                <img src="images/testimonials/pexels-photo-3585325.webp" alt="Profile Picture" width="94" height="94">
+                <h3>John Waddrob</h3>
+                <div class="stars">★★★★☆</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias possimus aspernatur excepturi placeat.
+                </p>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="testimonial-card">
+                <img src="images/testimonials/pexels-photo-2690323.webp" alt="Profile Picture" width="94" height="94">
+                <h3>John Waddrob</h3>
+                <div class="stars">★★★★★</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates excepturi placeat iusto cupiditate!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">My Skills</div>
+      <div class="skills-container">
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Web design</h3>
+          <p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+        </div>
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Web development</h3>
+          <p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛠️</div>
+          <h3>Frontend Development</h3>
+          <p>Expertise in HTML, CSS, and JavaScript. Build responsive and dynamic user interfaces using frameworks like React and Angular.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚙️</div>
+          <h3>Backend Development</h3>
+          <p>Proficient in server-side technologies like Node.js, Python, Java, and PHP. Experience with databases such as MySQL and MongoDB.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🧪</div>
+          <h3>Software Testing</h3>
+          <p>Experience with automated and manual testing. Familiar with tools like Selenium, Jest, and Mocha for quality assurance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="section-header">Technical Achievements</div>
+        <div class="achievements-container blocks">
+          <div class="responsive-cell-block wk-desk-1 wk-tab-1 wk-mobile-1 wk-ipadp-1 content work">
+            <img src="images/forecaster.png" alt=“forecaster” width="100" height="200">
+            <div class="layer">
+                <h3>Forecaster And Historical</h3>
+                <a href="Forecaster/forecaster.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          
+          <!-- Achievement 2 -->
+          <div class="responsive-cell-block wk-desk-1 wk-tab-1 wk-mobile-1 wk-ipadp-1 content work">
+            <img src="images/currency-converter2.png" alt=currency-converter width="100" height="200">
+            <div class="layer">
+                <h3>Currency Converter Task</h3>
+                <a href="Currencyconverter/currency-converter.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Interest Section -->
+    <section id="interest" class="section">
+      <div class="section-header">Interest and Hobbies</div>
+      <div class="hobbies-section">
+        <div class="hobbies-container">
+          <div class="card">
+            <div class="icon">
+              <img src="images/hobbies/music1.jpg" alt="music" width="100" height="100">
+            </div>
+            <h3>Listening Music</h3>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="images/hobbies/sketching.png" alt="sketch" width="100" height="100">
+            </div>
+            <h3>Sketching </h3>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="images/hobbies/surfing.jpg" alt="surfing" width="100" height="100">
+            </div>
+            <h3>Surfing Internet</h3>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="images/hobbies/travel.jpg" alt="travel" width="100" height="100">
+            </div>
+            <h3>Traveling</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">Contact</div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="./images/profile2.jpg" alt="Your Profile Image" class="profile-img" width="100" height="200">
+                <h1>Kajal Singh</h1>
+                <p>Software Engineer</p>
+                <div class="contact-icons">
+                    <p><i class="fas fa-phone"></i> Telephone: 07393061044</p>
+                    <p><i class="fas fa-envelope"></i> Email: kajolsingh124@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+              <h2  style="text-align: center;" >
+                <img src="./images/Lets-Connect-White-BG-03_2024-01-08-165648_kkth.jpg" alt="connect" width="200" height="100"></h2>
+                <form name="submit" id="contactForm">
+                    <input type="text" name="Name" id="nameInput" placeholder="Your Name" required>
+                    <span class="error" id="nameRequireError">Name is required</span>
+
+                    <input type="email" name="Email" id="emailInput" placeholder="Your Email" required>
+                    <span class="error" id="emailRequireError">Email is required</span>
+                    <span class="error" id="emailInvalidError">Email must end with @gmail.com</span>
+
+                    <textarea name="Message" id="message" rows="6" maxlength="500" placeholder="Your Message" required></textarea>
+                    <span class="error" id="messageError">Message should not exceed 500 characters</span>
+
+                    <div class="captcha-form">
+                        <input type="text" placeholder="Captcha" id="captchaTextBox">
+                        <div id="captcha"></div>
+                    </div>
+
+                    <button type="button" onclick="validateForm()" class="btn btn-submit">Submit</button>
+                </form>
+                <div class="form-success">
+                  <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+  </section>
+
+    <footer class="footer">
+      <p>Copyright © Kajal Singh</p>
+      <p>kajolsingh124@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

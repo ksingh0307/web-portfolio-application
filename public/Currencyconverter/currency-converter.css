@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #0077b5;
+  color: white;
+  padding: 5px;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin-left: 20px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+.currency-converter-container {
+  width: 500px;
+  margin: 50px auto;
+  background: #0077b5;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.converter-form h2 {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.currency {
+  font-size: x-large;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  align-items: end;
+}
+
+.form-row label {
+  font-style: italic;
+}
+
+.exchange-icon {
+  max-width: 50px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0077b5;
+  color: white;
+}

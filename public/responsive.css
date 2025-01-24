@@ -1,0 +1,180 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    margin-left: 10px;
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .header nav ul {
+    width: 100%;
+    display: block;
+    margin: 3rem 0;
+  }
+
+  .profile-container {
+    height: 200px; /* Reduce height for smaller screens */
+  }
+
+  .profile-section {
+    margin: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .profile-picture {
+    margin-left: 20px;
+    width: 120px;
+    height: 120px; /* Scale down for tablets */
+  }
+
+  .profile-info {
+    margin-left: 10px;
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .profile-info h1 {
+    font-size: 20px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Adjust grid for tablets */
+    padding: 15px;
+  }
+
+  .experience-item,
+  .education-item {
+    flex-direction: column; /* Stack items for smaller screens */
+    text-align: center;
+  }
+
+  .testimonial-card,
+  .achievements-card {
+    flex: 1 1 calc(50% - 40px); /* Adjust card width for tablets */
+  }
+
+  .responsive-cell-block.wk-desk-1.wk-tab-1.wk-mobile-1.wk-ipadp-1.content {
+    width: 100%; /* Full width for tablets */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container,
+  .form-second-section {
+    width: 100%;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+
+  .desktop-nav {
+    display: none; /* Hide desktop nav */
+  }
+  .burger-menu-container {
+    display: block; /* Show burger menu */
+  }
+
+  .content {
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop nav on smaller screens */
+  }
+
+  .burger-icon {
+    display: flex; /* Show burger icon on smaller screens */
+  }
+
+  .mobile-nav {
+    width: 40%; /* Full width for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none; /* Hide mobile nav on larger screens */
+  }
+
+  .burger-icon {
+    display: none; /* Hide burger icon on larger screens */
+  }
+
+  .desktop-nav {
+    display: flex; /* Ensure desktop nav is displayed */
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    margin-left: 5px;
+    font-size: 1.2rem;
+  }
+
+  .header nav ul li a {
+    font-size: 0.9rem; /* Smaller text for links */
+  }
+
+  .profile-container {
+    height: 150px; /* Further reduce banner height */
+  }
+
+  .profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info h1 {
+    font-size: 18px;
+  }
+
+  .profile-info p {
+    font-size: 12px;
+  }
+
+  .profile-info button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem; /* Smaller buttons for mobile */
+  }
+
+  .testimonial-card,
+  .achievements-card {
+    flex: 1 1 100%; /* Full width for small screens */
+  }
+
+  .responsive-cell-block.wk-desk-1.wk-tab-1.wk-mobile-1.wk-ipadp-1.content {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height for small screens */
+  }
+
+  .work img {
+    transition: transform 0.3s ease-in-out; /* Slightly faster for mobile */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.6rem;
+  }
+
+  .contact-form .btn-submit {
+    padding: 0.6rem;
+  }
+
+  .social-icons i {
+    font-size: 24px;
+  }
+}
