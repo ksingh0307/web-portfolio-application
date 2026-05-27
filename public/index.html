@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,8 +10,8 @@
     <!-- iOS Safari theme color -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Kajal Singh | Frontend / Full Stack Software Engineer</title>
-    <link rel="stylesheet" href="style.css?v=2" />
-    <link rel="stylesheet" href="responsive.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="responsive.css?v=3" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
     
@@ -33,7 +33,7 @@
     </div>
     <header class="header">
       <div class="header-container">
-        <img src="images/favicon/favicon.svg" height="50" width="50" class="logo" alt=“image” >
+        <img src="images/favicon/favicon.svg" height="50" width="50" class="logo" alt="image" >
        
         <!-- Burger Icon -->
         <div class="burger-icon" onclick="toggleMenu()">
@@ -163,7 +163,7 @@
         </div>
         <div class="experience-item">
           <div class="item-logos">
-            <div class="logo-fallback">OT</div>
+            <div class="logo-fallback">Oodles Technologies Pvt. Ltd.</div>
           </div>
           <div class="content">
             <h3>Frontend Developer</h3>
@@ -182,132 +182,193 @@
       </section>
 
     <!-- Skills Section -->
-    <section id=”skills” class=”section”>
-      <div class=”section-header”>My Skills</div>
-      <div class=”skills-tech-container”>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>🖥️</span> Frontend</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>HTML5</span>
-            <span class=”skill-tag”>CSS3</span>
-            <span class=”skill-tag”>JavaScript (ES6+)</span>
-            <span class=”skill-tag”>TypeScript</span>
-            <span class=”skill-tag”>React.js</span>
-            <span class=”skill-tag”>Angular</span>
-            <span class=”skill-tag”>Vue.js</span>
-            <span class=”skill-tag”>Bootstrap</span>
-            <span class=”skill-tag”>Tailwind CSS</span>
-            <span class=”skill-tag”>SCSS / SASS</span>
+    <!-- Skills Section -->
+    <section id="skills" class="section li-skills-section">
+      <div class="section-header">Skills</div>
+
+      <!-- Top Skills -->
+      <div class="li-top-skills">
+        <p class="li-top-skills-label">Top skills</p>
+        <div class="li-top-skills-list">
+          <div class="li-top-skill-item">
+            <i class="fab fa-angular li-skill-icon" style="color:#dd1b16;"></i>
+            <span>Angular</span>
+          </div>
+          <div class="li-top-skill-item">
+            <i class="fab fa-react li-skill-icon" style="color:#61dafb;"></i>
+            <span>React.js</span>
+          </div>
+          <div class="li-top-skill-item">
+            <i class="fab fa-js-square li-skill-icon" style="color:#f7df1e;"></i>
+            <span>JavaScript (ES6+)</span>
+          </div>
+          <div class="li-top-skill-item">
+            <i class="fab fa-node-js li-skill-icon" style="color:#68a063;"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="li-top-skill-item">
+            <i class="fab fa-html5 li-skill-icon" style="color:#e34c26;"></i>
+            <span>HTML5 / CSS3</span>
+          </div>
+          <div class="li-top-skill-item">
+            <i class="fab fa-python li-skill-icon" style="color:#3572a5;"></i>
+            <span>Python</span>
           </div>
         </div>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>⚙️</span> Backend</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>Node.js</span>
-            <span class=”skill-tag”>Express.js</span>
-            <span class=”skill-tag”>Python</span>
-            <span class=”skill-tag”>Java</span>
-            <span class=”skill-tag”>REST APIs</span>
-            <span class=”skill-tag”>GraphQL</span>
-            <span class=”skill-tag”>JWT Auth</span>
+      </div>
+
+      <div class="li-skills-divider"></div>
+
+      <!-- Skill Categories -->
+      <div class="li-skills-grid">
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-desktop li-card-icon"></i>
+            <h4>Frontend Development</h4>
           </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>HTML5 &amp; CSS3</li>
+            <li><span class="li-dot"></span>JavaScript (ES6+)</li>
+            <li><span class="li-dot"></span>TypeScript</li>
+            <li><span class="li-dot"></span>Angular (2+, AngularJS)</li>
+            <li><span class="li-dot"></span>React.js</li>
+            <li><span class="li-dot"></span>Bootstrap &amp; Tailwind CSS</li>
+            <li><span class="li-dot"></span>SCSS / SASS / LESS</li>
+            <li><span class="li-dot"></span>Responsive &amp; Mobile-First Design</li>
+          </ul>
         </div>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>🗄️</span> Databases</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>MongoDB</span>
-            <span class=”skill-tag”>MySQL</span>
-            <span class=”skill-tag”>PostgreSQL</span>
-            <span class=”skill-tag”>Firebase</span>
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-server li-card-icon"></i>
+            <h4>Backend &amp; Databases</h4>
           </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>Node.js &amp; Express.js</li>
+            <li><span class="li-dot"></span>Python</li>
+            <li><span class="li-dot"></span>REST APIs &amp; GraphQL</li>
+            <li><span class="li-dot"></span>MongoDB</li>
+            <li><span class="li-dot"></span>MySQL / SQL</li>
+            <li><span class="li-dot"></span>Firebase</li>
+            <li><span class="li-dot"></span>JWT Authentication</li>
+          </ul>
         </div>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>🔁</span> State Management &amp; Architecture</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>NgRx</span>
-            <span class=”skill-tag”>Redux</span>
-            <span class=”skill-tag”>RxJS</span>
-            <span class=”skill-tag”>Micro Frontend</span>
-            <span class=”skill-tag”>MVC</span>
-            <span class=”skill-tag”>Component Architecture</span>
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-layer-group li-card-icon"></i>
+            <h4>Architecture &amp; State</h4>
           </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>NgRx</li>
+            <li><span class="li-dot"></span>Redux</li>
+            <li><span class="li-dot"></span>RxJS</li>
+            <li><span class="li-dot"></span>Micro Frontend Architecture</li>
+            <li><span class="li-dot"></span>MVC / Component Architecture</li>
+            <li><span class="li-dot"></span>ESLint &amp; Prettier</li>
+          </ul>
         </div>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>🚀</span> DevOps &amp; Tools</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>Git &amp; GitHub</span>
-            <span class=”skill-tag”>Docker</span>
-            <span class=”skill-tag”>AWS</span>
-            <span class=”skill-tag”>Firebase Hosting</span>
-            <span class=”skill-tag”>CI/CD</span>
-            <span class=”skill-tag”>Agile / Scrum</span>
-            <span class=”skill-tag”>Webpack</span>
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-tools li-card-icon"></i>
+            <h4>DevOps &amp; Tools</h4>
           </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>Git &amp; GitHub</li>
+            <li><span class="li-dot"></span>AWS (EC2, S3, Lambda)</li>
+            <li><span class="li-dot"></span>Azure (Basics)</li>
+            <li><span class="li-dot"></span>Docker</li>
+            <li><span class="li-dot"></span>Firebase Hosting</li>
+            <li><span class="li-dot"></span>Jira &amp; Teamwork</li>
+            <li><span class="li-dot"></span>Agile / Scrum</li>
+          </ul>
         </div>
-        <div class=”skill-category”>
-          <h4><span class=”skill-cat-icon”>🧪</span> Testing</h4>
-          <div class=”skill-tags”>
-            <span class=”skill-tag”>Jest</span>
-            <span class=”skill-tag”>Jasmine</span>
-            <span class=”skill-tag”>Karma</span>
-            <span class=”skill-tag”>pytest</span>
-            <span class=”skill-tag”>Selenium</span>
-            <span class=”skill-tag”>Cypress</span>
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-vial li-card-icon"></i>
+            <h4>Testing</h4>
           </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>Jasmine &amp; Karma</li>
+            <li><span class="li-dot"></span>Jest</li>
+            <li><span class="li-dot"></span>pytest</li>
+            <li><span class="li-dot"></span>Selenium</li>
+            <li><span class="li-dot"></span>Cypress</li>
+            <li><span class="li-dot"></span>Unit &amp; E2E Testing</li>
+          </ul>
         </div>
+
+        <div class="li-skill-card">
+          <div class="li-skill-card-header">
+            <i class="fas fa-globe li-card-icon"></i>
+            <h4>Other</h4>
+          </div>
+          <ul class="li-skill-list">
+            <li><span class="li-dot"></span>Webpack &amp; Vite</li>
+            <li><span class="li-dot"></span>CI/CD Pipelines</li>
+            <li><span class="li-dot"></span>SEO Principles</li>
+            <li><span class="li-dot"></span>Cross-Browser Compatibility</li>
+            <li><span class="li-dot"></span>Accessibility (WCAG)</li>
+            <li><span class="li-dot"></span>Hindi &amp; English (Fluent)</li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id=”achievements” class=”section”>
-      <div class=”section-header”>Projects</div>
-      <div class=”projects-grid”>
+    <section id="achievements" class="section">
+      <div class="section-header">Projects</div>
+      <div class="projects-grid">
 
-        <div class=”project-card”>
-          <div class=”project-icon”>🛒</div>
+        <div class="project-card">
+          <div class="project-icon">🛒</div>
           <h3>E-Commerce Platform</h3>
           <p>Full-stack shopping app with product listings, cart, user auth, and order management. Secure payments via Stripe API.</p>
-          <div class=”project-tech”>
+          <div class="project-tech">
             <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span><span>Stripe API</span>
           </div>
-          <div class=”project-links”>
-            <a href=”https://github.com/ksingh0307” target=”_blank”><i class=”fab fa-github”></i> GitHub</a>
+          <div class="project-links">
+            <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
 
-        <div class=”project-card”>
-          <div class=”project-icon”>📋</div>
+        <div class="project-card">
+          <div class="project-icon">📋</div>
           <h3>Task Management App</h3>
           <p>Angular productivity app with drag-and-drop Kanban boards, real-time sync, and role-based access control using NgRx state management.</p>
-          <div class=”project-tech”>
+          <div class="project-tech">
             <span>Angular</span><span>NgRx</span><span>TypeScript</span><span>Firebase</span>
           </div>
-          <div class=”project-links”>
-            <a href=”https://github.com/ksingh0307” target=”_blank”><i class=”fab fa-github”></i> GitHub</a>
+          <div class="project-links">
+            <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
 
-        <div class=”project-card”>
-          <div class=”project-icon”>📊</div>
+        <div class="project-card">
+          <div class="project-icon">📊</div>
           <h3>Analytics Dashboard</h3>
           <p>Real-time data visualisation dashboard with interactive charts, REST API integration, and responsive design for desktop and mobile.</p>
-          <div class=”project-tech”>
+          <div class="project-tech">
             <span>React</span><span>Chart.js</span><span>REST API</span><span>Tailwind CSS</span>
           </div>
-          <div class=”project-links”>
-            <a href=”https://github.com/ksingh0307” target=”_blank”><i class=”fab fa-github”></i> GitHub</a>
+          <div class="project-links">
+            <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
 
-        <div class=”project-card”>
-          <div class=”project-icon”>🔐</div>
+        <div class="project-card">
+          <div class="project-icon">🔐</div>
           <h3>Auth &amp; User Management API</h3>
           <p>Production-ready REST API with JWT authentication, refresh tokens, role-based permissions, and bcrypt password hashing.</p>
-          <div class=”project-tech”>
+          <div class="project-tech">
             <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
           </div>
-          <div class=”project-links”>
-            <a href=”https://github.com/ksingh0307” target=”_blank”><i class=”fab fa-github”></i> GitHub</a>
+          <div class="project-links">
+            <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
 

@@ -789,47 +789,131 @@ ul.outline-round li::before {
   justify-content: center;
 }
 
-/* Skills — Tech Stack Layout */
-.skills-tech-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
+/* ── Skills — LinkedIn Style ─────────────────────────────────────── */
+
+.li-skills-section {
+  background: #f3f2ef;
+  border: none;
+  box-shadow: none;
 }
 
-.skill-category {
-  background: #f8f9fa;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 16px 20px;
+/* Top Skills row */
+.li-top-skills {
+  padding: 16px 24px 0;
 }
 
-.skill-category h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #0077b5;
+.li-top-skills-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
   margin-bottom: 12px;
 }
 
-.skill-cat-icon {
-  margin-right: 6px;
-}
-
-.skill-tags {
+.li-top-skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
-.skill-tag {
-  background: #e8f4fd;
-  color: #0077b5;
-  border: 1px solid #b3d7f0;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 13px;
-  font-weight: 500;
-  white-space: nowrap;
+.li-top-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  padding: 7px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.li-top-skill-item:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.li-skill-icon {
+  font-size: 18px;
+}
+
+.li-skills-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 24px;
+}
+
+/* Skills grid */
+.li-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 12px;
+  padding: 0 24px 24px;
+}
+
+.li-skill-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.li-skill-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.li-skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0a66c2;
+}
+
+.li-card-icon {
+  font-size: 18px;
+  color: #0a66c2;
+}
+
+.li-skill-card-header h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.li-skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li-skill-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: #333333;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.4;
+}
+
+.li-skill-list li:last-child {
+  border-bottom: none;
+}
+
+.li-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0a66c2;
+  flex-shrink: 0;
 }
 
 /* Projects Grid */
