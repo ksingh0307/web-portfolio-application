@@ -115,7 +115,19 @@ body {
   margin: 1rem;
   display: flex;
   align-items: start;
-  flex-wrap: wrap; /* Wrap for smaller screens */
+  flex-wrap: wrap;
+}
+
+.about-content .content {
+  padding: 8px 4px;
+  max-width: 900px;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #333;
+}
+
+.about-content .content p strong {
+  color: #0077b5;
 }
 
 .experience-item {
@@ -748,4 +760,155 @@ ul.outline-round li::before {
 .form-success span{
   font-size: 18px;
   font-weight: bold;
+}
+
+/* Visa Badge */
+.visa-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.3px;
+}
+
+/* Logo Fallback (for missing company logos) */
+.logo-fallback {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: #0077b5;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skills — Tech Stack Layout */
+.skills-tech-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill-category {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.skill-category h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0077b5;
+  margin-bottom: 12px;
+}
+
+.skill-cat-icon {
+  margin-right: 6px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #e8f4fd;
+  color: #0077b5;
+  border: 1px solid #b3d7f0;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.15);
+}
+
+.project-icon {
+  font-size: 32px;
+}
+
+.project-card h3 {
+  font-size: 17px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.project-card p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.project-tech span {
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 8px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0077b5;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #0077b5;
+  border-radius: 6px;
+  padding: 5px 14px;
+  transition: background 0.2s ease;
+}
+
+.project-links a:hover {
+  background: #0077b5;
+  color: white;
 }
