@@ -596,6 +596,54 @@ body {
 }
 
 /* ─── PROJECTS ─────────────────────────────────────────── */
+.projects-category {
+  padding: 0 32px 8px;
+}
+
+.projects-category + .projects-category {
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.projects-category-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.projects-category-label i {
+  font-size: 12px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-category .projects-grid {
+  padding: 0 0 16px;
+}
+
+.project-private {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  background: #f8fafc;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 12px;
+}
+
+.project-private i { font-size: 10px; }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
