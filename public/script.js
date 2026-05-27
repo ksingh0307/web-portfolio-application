@@ -1,17 +1,29 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Simulate app loading (replace with real loading logic)
     setTimeout(() => {
       const splashScreen = document.getElementById('custom-splash-screen');
       if (splashScreen) {
         splashScreen.style.opacity = 0;
         splashScreen.style.transition = 'opacity 1s';
-        setTimeout(() => {
-          splashScreen.remove(); // Fully remove the splash screen from the DOM
-        }, 1000); // Match fade-out duration
+        setTimeout(() => { splashScreen.remove(); }, 1000);
       }
-    }, 3000); // Adjust to match your app's loading duration
+    }, 3000);
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.desktop-nav a');
+    const onScroll = () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 80) current = sec.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 });
   
 
