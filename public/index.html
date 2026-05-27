@@ -13,8 +13,11 @@
     <!-- iOS Safari theme color -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Kajal Singh | Frontend / Full Stack Software Engineer</title>
-    <link rel="stylesheet" href="style.css?v=6" />
-    <link rel="stylesheet" href="responsive.css?v=6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css?v=7" />
+    <link rel="stylesheet" href="responsive.css?v=7" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
@@ -187,34 +190,36 @@
     <!-- Education Section -->
     <section id="education" class="section">
       <div class="section-header">Education</div>
-      <div class="education-item">
-        <div class="item-logos">
-          <img src="images/uniofstaffs_logo.jpg" width="100" height="100" />
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/uniofstaffs_logo.jpg" alt="Staffordshire" />
+          </div>
+          <div class="timeline-body">
+            <h3>University of Staffordshire</h3>
+            <div class="tl-org">MSc, Computer Science</div>
+            <div class="tl-date">Jan 2024 – May 2025 · Stoke-on-Trent, UK</div>
+          </div>
         </div>
-        <div class="content">
-          <h3>University of Staffordshire</h3>
-          <h5>MSc, Computer Science</h5>
-          <h5>Jan 2024 – May 2025 · Stoke-on-Trent, UK</h5>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <div class="logo-fallback" style="background:#6c3483;">JU</div>
+          </div>
+          <div class="timeline-body">
+            <h3>Jagannath University</h3>
+            <div class="tl-org">Bachelor of Computer Applications (BCA)</div>
+            <div class="tl-date">2015 – 2018 · Jaipur, India</div>
+          </div>
         </div>
-      </div>
-      <div class="education-item">
-        <div class="item-logos">
-          <div class="logo-fallback" style="background:#6c3483;">JU</div>
-        </div>
-        <div class="content">
-          <h3>Jagannath University</h3>
-          <h5>Bachelor of Computer Applications (BCA)</h5>
-          <h5>2015 – 2018 · Jaipur, India</h5>
-        </div>
-      </div>
-      <div class="education-item">
-        <div class="item-logos">
-          <div class="logo-fallback" style="background:#1a5276;">CBSE</div>
-        </div>
-        <div class="content">
-          <h3>Central Board of Secondary Education</h3>
-          <h5>High School — 10th &amp; 12th</h5>
-          <h5>2011 – 2015 · New Delhi, India</h5>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <div class="logo-fallback" style="background:#1a5276;font-size:11px;">CBSE</div>
+          </div>
+          <div class="timeline-body">
+            <h3>Central Board of Secondary Education</h3>
+            <div class="tl-org">High School — 10th &amp; 12th</div>
+            <div class="tl-date">2011 – 2015 · New Delhi, India</div>
+          </div>
         </div>
       </div>
     </section>
@@ -222,94 +227,56 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
       <div class="section-header">Experience</div>
-      <div class="experience-item">
-        <div class="item-logos">
-          <img
-            src="images/aureus_tech_systems_llc_logo.jpg"
-            width="100"
-            height="100"
-          />
-        </div>
-        <div class="content">
-          <h3>Software Engineer</h3>
-          <h5>Aureus Tech System Pvt Ltd.</h5>
-          <h5>Jun 2022- Jan 2024</h5>
-          <ul class="outline-round">
-            <li>Responsive web development with HTML, CSS, and JavaScript</li>
-            <li>Dynamic UI creation using Angular and React</li>
-            <li>Micro Frontend architecture expertise</li>
-            <li>Unit testing with Jasmine and Karma</li>
-            <li>Clean, maintainable, and scalable coding practices</li>
-            <li>Collaboration with designers for UI/UX implementation</li>
-            <li>
-              Agile development and on-time delivery of high-quality products
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="experience-item">
-        <div class="item-logos">
-          <img
-            src="images/watchguard_technologies_logo.jpg"
-            width="100"
-            height="100"
-          />
-        </div>
-        <div class="content">
-          <h3>Software Engineer</h3>
-          <h5>WatchGuard Technologies Pvt Ltd.</h5>
-          <h5>Jun 2021 - Jun 2022</h5>
-          <ul class="outline-round">
-            <li>
-              Designed, developed, and maintained software applications using
-              AWS Services and Python
-            </li>
-            <li>Backend development with Python and AWS integration</li>
-            <li>Wrote unit test cases using Jasmine, Karma, and pytest</li>
-            <li>Worked on frontend and backend testing</li>
-            <li>
-              Attended training sessions on Cyber Security, AWS, and the latest
-              Angular versions
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="experience-item">
-        <div class="item-logos">
-          <div class="logo-fallback">
-            <img src="images/Oodles-Technologies-2.svg" />
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/aureus_tech_systems_llc_logo.jpg" alt="Aureus" />
+          </div>
+          <div class="timeline-body">
+            <h3>Software Engineer</h3>
+            <div class="tl-org">Aureus Tech System Pvt Ltd.</div>
+            <div class="tl-date">Jun 2022 – Jan 2024</div>
+            <ul>
+              <li>Responsive web development with HTML, CSS, and JavaScript</li>
+              <li>Dynamic UI creation using Angular and React</li>
+              <li>Micro Frontend architecture expertise</li>
+              <li>Unit testing with Jasmine and Karma</li>
+              <li>Agile development and on-time delivery of high-quality products</li>
+            </ul>
           </div>
         </div>
-        <div class="content">
-          <h3>Frontend Developer</h3>
-          <h5>Oodles Technologies Pvt Ltd</h5>
-          <h5>Jun 2018 – Oct 2021 · 3 years 5 months · Gurugram, India</h5>
-          <ul class="outline-round">
-            <li>
-              Built React and Angular enterprise applications serving thousands
-              of daily active users
-            </li>
-            <li>
-              Migrated legacy jQuery UI systems to component-driven
-              architecture, improving performance by ~30%
-            </li>
-            <li>
-              Applied NgRx state management for complex async workflows across
-              long-running SaaS products
-            </li>
-            <li>
-              Integrated REST APIs with Node.js and MongoDB, delivering secure
-              data-driven features
-            </li>
-            <li>
-              Ensured cross-browser compatibility using Bootstrap, Tailwind CSS,
-              and SCSS
-            </li>
-            <li>
-              Mentored interns and junior developers on frontend best practices
-              and code review standards
-            </li>
-          </ul>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <img src="images/watchguard_technologies_logo.jpg" alt="WatchGuard" />
+          </div>
+          <div class="timeline-body">
+            <h3>Software Engineer</h3>
+            <div class="tl-org">WatchGuard Technologies Pvt Ltd.</div>
+            <div class="tl-date">Jun 2021 – Jun 2022</div>
+            <ul>
+              <li>Designed and maintained software applications using AWS Services and Python</li>
+              <li>Backend development with Python and AWS integration</li>
+              <li>Wrote unit test cases using Jasmine, Karma, and pytest</li>
+              <li>Attended training on Cyber Security, AWS, and latest Angular versions</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-logo">
+            <div class="logo-fallback" style="background:#e67e22;">OT</div>
+          </div>
+          <div class="timeline-body">
+            <h3>Frontend Developer</h3>
+            <div class="tl-org">Oodles Technologies Pvt Ltd</div>
+            <div class="tl-date">Jun 2018 – Oct 2021 · 3 yrs 5 months · Gurugram, India</div>
+            <ul>
+              <li>Built React and Angular enterprise applications serving thousands of daily active users</li>
+              <li>Migrated legacy jQuery UI to component-driven architecture, improving performance by ~30%</li>
+              <li>Applied NgRx state management for complex async workflows across SaaS products</li>
+              <li>Integrated REST APIs with Node.js and MongoDB, delivering secure data-driven features</li>
+              <li>Mentored interns and junior developers on frontend best practices</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -460,74 +427,62 @@
       <div class="section-header">Projects</div>
       <div class="projects-grid">
         <div class="project-card">
-          <div class="project-icon">🛒</div>
-          <h3>E-Commerce Platform</h3>
-          <p>
-            Full-stack shopping app with product listings, cart, user auth, and
-            order management. Secure payments via Stripe API.
-          </p>
-          <div class="project-tech">
-            <span>React</span><span>Node.js</span><span>MongoDB</span
-            ><span>Express</span><span>Stripe API</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ksingh0307" target="_blank"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <div class="project-icon">🛒</div>
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack shopping app with product listings, cart, user auth, and order management. Secure payments via Stripe API.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span><span>Stripe API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-icon">📋</div>
-          <h3>Task Management App</h3>
-          <p>
-            Angular productivity app with drag-and-drop Kanban boards, real-time
-            sync, and role-based access control using NgRx state management.
-          </p>
-          <div class="project-tech">
-            <span>Angular</span><span>NgRx</span><span>TypeScript</span
-            ><span>Firebase</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ksingh0307" target="_blank"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <div class="project-icon">📋</div>
+            <h3>Task Management App</h3>
+            <p>Angular productivity app with drag-and-drop Kanban boards, real-time sync, and role-based access control using NgRx state management.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>NgRx</span><span>TypeScript</span><span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-icon">📊</div>
-          <h3>Analytics Dashboard</h3>
-          <p>
-            Real-time data visualisation dashboard with interactive charts, REST
-            API integration, and responsive design for desktop and mobile.
-          </p>
-          <div class="project-tech">
-            <span>React</span><span>Chart.js</span><span>REST API</span
-            ><span>Tailwind CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ksingh0307" target="_blank"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <div class="project-icon">📊</div>
+            <h3>Analytics Dashboard</h3>
+            <p>Real-time data visualisation dashboard with interactive charts, REST API integration, and responsive design for desktop and mobile.</p>
+            <div class="project-tech">
+              <span>React</span><span>Chart.js</span><span>REST API</span><span>Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
 
         <div class="project-card">
-          <div class="project-icon">🔐</div>
-          <h3>Auth &amp; User Management API</h3>
-          <p>
-            Production-ready REST API with JWT authentication, refresh tokens,
-            role-based permissions, and bcrypt password hashing.
-          </p>
-          <div class="project-tech">
-            <span>Node.js</span><span>Express</span><span>MongoDB</span
-            ><span>JWT</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ksingh0307" target="_blank"
-              ><i class="fab fa-github"></i> GitHub</a
-            >
+          <div class="project-card-top"></div>
+          <div class="project-card-body">
+            <div class="project-icon">🔐</div>
+            <h3>Auth &amp; User Management API</h3>
+            <p>Production-ready REST API with JWT authentication, refresh tokens, role-based permissions, and bcrypt password hashing.</p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ksingh0307" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
         </div>
       </div>

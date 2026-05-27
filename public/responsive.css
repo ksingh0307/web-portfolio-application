@@ -1,180 +1,74 @@
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header h1 {
-    margin-left: 10px;
-    font-size: 1.5rem; /* Reduce font size for smaller screens */
-  }
+/* ─── RESPONSIVE ───────────────────────────────────────── */
 
-  .header nav ul {
-    width: 100%;
-    display: block;
-    margin: 3rem 0;
-  }
+@media (max-width: 768px) {
+  .desktop-nav { display: none; }
+  .burger-icon  { display: flex; }
+
+  .mobile-nav { width: 75%; }
 
   .profile-container {
-    height: 200px; /* Reduce height for smaller screens */
-  }
-
-  .profile-section {
-    margin: 1rem; /* Adjust margin for smaller screens */
-  }
-
-  .profile-picture {
-    margin-left: 20px;
-    width: 120px;
-    height: 120px; /* Scale down for tablets */
-  }
-
-  .profile-info {
-    margin-left: 10px;
-    text-align: center; /* Center-align for smaller screens */
-  }
-
-  .profile-info h1 {
-    font-size: 20px;
-  }
-
-  .profile-info p {
-    font-size: 14px;
-  }
-
-  .skills-container {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(200px, 1fr)
-    ); /* Adjust grid for tablets */
-    padding: 15px;
-  }
-
-  .experience-item,
-  .education-item {
-    flex-direction: column; /* Stack items for smaller screens */
-    text-align: center;
-  }
-
-  .testimonial-card,
-  .achievements-card {
-    flex: 1 1 calc(50% - 40px); /* Adjust card width for tablets */
-  }
-
-  .responsive-cell-block.wk-desk-1.wk-tab-1.wk-mobile-1.wk-ipadp-1.content {
-    width: 100%; /* Full width for tablets */
-  }
-
-  .contact-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .form-container,
-  .form-second-section {
-    width: 100%;
-  }
-
-  .social-icons a {
-    font-size: 1.2rem;
-  }
-
-  .desktop-nav {
-    display: none; /* Hide desktop nav */
-  }
-  .burger-menu-container {
-    display: block; /* Show burger menu */
-  }
-
-  .content {
-    line-height: 1.5;
     text-align: center;
-  }
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none; /* Hide desktop nav on smaller screens */
+    padding: 48px 24px;
+    gap: 24px;
   }
 
-  .burger-icon {
-    display: flex; /* Show burger icon on smaller screens */
-  }
+  .profile-info h2 { font-size: 2rem; }
 
-  .mobile-nav {
-    width: 40%; /* Full width for smaller screens */
-  }
+  .profile-info > p:nth-of-type(3) { justify-content: center; }
+
+  .section { width: calc(100% - 24px); margin: 14px auto; }
+
+  .section-header { padding: 18px 20px 16px; font-size: 18px; }
+
+  .timeline { padding: 16px 20px 20px; }
+  .timeline::before { left: 42px; }
+
+  .timeline-logo { width: 50px; height: 50px; border-radius: 10px; }
+  .timeline-logo .logo-fallback { width: 50px; height: 50px; font-size: 13px; }
+
+  .about-bio { padding: 20px; }
+
+  .about-strip { padding: 20px 16px; }
+  .strip-number { font-size: 22px; }
+
+  .li-top-skills { padding: 16px 20px 0; }
+  .li-skills-grid { padding: 0 20px 20px; }
+  .li-skills-divider { margin: 16px 20px; }
+
+  .projects-grid { padding: 16px 20px; gap: 14px; }
+
+  .hobbies-section { padding: 16px 20px 20px; }
+  .hobbies-container { grid-template-columns: repeat(2, 1fr); }
+
+  .contact-wrapper { flex-direction: column; }
+  .contact-panel { flex: none; width: 100%; border-radius: 0; }
+  .contact-form-panel { padding: 24px 20px; }
+
+  .footer-inner { padding: 18px 20px; flex-direction: column; align-items: flex-start; gap: 10px; }
 }
 
 @media (min-width: 769px) {
-  .mobile-nav {
-    display: none; /* Hide mobile nav on larger screens */
-  }
-
-  .burger-icon {
-    display: none; /* Hide burger icon on larger screens */
-  }
-
-  .desktop-nav {
-    display: flex; /* Ensure desktop nav is displayed */
-  }
+  .mobile-nav { display: none; }
+  .burger-icon  { display: none; }
+  .desktop-nav  { display: flex; }
 }
 
 @media (max-width: 480px) {
-  .header h1 {
-    margin-left: 5px;
-    font-size: 1.2rem;
-  }
+  .profile-picture { width: 120px; height: 120px; }
+  .profile-info h2 { font-size: 1.7rem; }
 
-  .header nav ul li a {
-    font-size: 0.9rem; /* Smaller text for links */
-  }
+  .hobbies-container { grid-template-columns: 1fr; }
 
-  .profile-container {
-    height: 150px; /* Further reduce banner height */
-  }
+  .about-strip-divider { display: none; }
+  .about-strip { gap: 8px; }
+  .about-strip-item { min-width: 80px; }
 
-  .profile-picture {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
-  }
+  .li-skills-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .li-top-skills-list { gap: 7px; }
 
-  .profile-info h1 {
-    font-size: 18px;
-  }
-
-  .profile-info p {
-    font-size: 12px;
-  }
-
-  .profile-info button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem; /* Smaller buttons for mobile */
-  }
-
-  .testimonial-card,
-  .achievements-card {
-    flex: 1 1 100%; /* Full width for small screens */
-  }
-
-  .responsive-cell-block.wk-desk-1.wk-tab-1.wk-mobile-1.wk-ipadp-1.content {
-    width: 100%; /* Full width for mobile */
-    height: auto; /* Adjust height for small screens */
-  }
-
-  .work img {
-    transition: transform 0.3s ease-in-out; /* Slightly faster for mobile */
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.6rem;
-  }
-
-  .contact-form .btn-submit {
-    padding: 0.6rem;
-  }
-
-  .social-icons i {
-    font-size: 24px;
-  }
+  .contact-form-panel { padding: 20px 16px; }
+  .form-row { flex-direction: column; gap: 0; }
 }
